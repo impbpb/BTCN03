@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTCN02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <form action="/" method="POST">
+        <div class="container">
+            <!-- Content here -->
+            <div class="row">
+                <h1>Bé tập tính</h1>
+            </div>
+            <div class="row mb-2">
+
+                <div class="col-2">Số thứ nhất</div>
+                <div class="col-4">
+                    <input class="w-100 ip1" type="" name="x" value=<%= x %>>
+                </div>
+
+                <div class="col">
+                    <input class="choose rt rt1" type="radio" value="plus" name="cal">
+                    <label for="choose">Cộng</label>
+
+                    <input class="choose rt rt2" type="radio" value="minus" name="cal">
+                    <label for="choose">Trừ</label>
+                </div>
+
+            </div>
+            <div class="row mb-2">
+                <div class="col-2">Số thứ hai</div>
+                <div class="col-4">
+                    <input class="w-100 ip2" type="" name="y" value=<%= y %>>
+                </div>
+
+                <div class="col">
+                    <input class="choose rt rt3" type="radio" value="multi" name="cal">
+                    <label for="choose">Nhân</label>
+
+                    <input class="choose rt rt4" type="radio" value="divide" name="cal">
+                    <label for="choose">Chia</label>
+                </div>
+
+            </div>
+            <div class="row mb-2">
+                <div class="col-2">Kết quả</div>
+                <div class="col-4">
+                    <input class="w-100 ip-re" type="" name="r" value=<%= result %>>
+                </div>
+
+                <div class="col">
+                    <button class="butn">Tính</button>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-2">Thông báo</div>
+                <div class="col notif" style="color: red"  name="n"><%= n %></div>
+            </div>
+        </div>
+    </form>
+
+    <!-- <script src="/app.js"></script> -->
+</body>
+
+</html>
